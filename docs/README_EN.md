@@ -72,13 +72,6 @@ It is recommended to use Vercel's [skills.sh](https://skills.sh/) leaderboard, w
 
 Additionally, you can use the [skillsmp](https://skillsmp.com/zh) marketplace, which automatically indexes all Skills projects on GitHub and organizes them by category, update time, star count, and other tags.
 
-Other featured Agent Skills marketplaces:
-
--   [context7](https://context7.com/?tab=skills): Skill marketplace based on Context7
--   [skillstore.io](https://skillstore.io/zh-hans): Chinese marketplace with security-audited Skills
--   [agentskills.me](https://agentskills.me/): Marketplace offering cloud-based Skill runtime environments
--   [skills.rest](https://skills.rest/): Marketplace providing Skill analysis and security reviews
-
 ## Product Usage
 
 Agent Skills is a cross-platform standard based on the file system, allowing flexible integration into various products.
@@ -126,54 +119,43 @@ As the Agent Skills standard becomes more widespread, an increasing number of co
 
 -   [anthropics/skill-creator](https://github.com/anthropics/skills/tree/main/skills/skill-creator): Official meta-skill from Anthropic for creating skills, enabling rapid creation of personal custom skills
 
-### Document Processing
-
--   [docx](https://github.com/anthropics/skills/tree/main/skills/docx): Skill for creating and editing Word documents
--   [pptx](https://github.com/anthropics/skills/tree/main/skills/pptx): Skill for creating and editing PowerPoint presentations
--   [xlsx](https://github.com/anthropics/skills/tree/main/skills/xlsx): Skill for creating and editing Excel spreadsheets
--   [pdf](https://github.com/anthropics/skills/tree/main/skills/pdf): Skill for creating and editing PDFs
-
 ### Official Projects
 
--   [anthropics/skills](https://github.com/anthropics/skills): Skills collection from Anthropic
--   [better-auth/skills](https://github.com/better-auth/skills): Authentication tools Skills collection from Better Auth
--   [black-forest-labs/skills](https://github.com/black-forest-labs/skills): Skills collection for controlling FLUX models from Black Forest Labs
--   [browser-use/browser-use](https://github.com/browser-use/browser-use/tree/main/skills): Browser automation Skills collection from Browser Use
--   [cloudflare/skills](https://github.com/cloudflare/skills): API integration Skills collection from Cloudflare
--   [ClickHouse/agent-skills](https://github.com/ClickHouse/agent-skills): Database query and analytics Skills collection from ClickHouse
--   [expo/skills](https://github.com/expo/skills): React Native Skills collection from Expo
--   [firecrawl/cli](https://github.com/firecrawl/cli): CLI tool Skills from Firecrawl
--   [google-gemini/gemini-skills](https://github.com/google-gemini/gemini-skills): API/SDK Skills collection from Google Gemini
--   [huggingface/skills](https://github.com/huggingface/skills): Skills for training large models from HuggingFace
--   [kepano/obsidian-skills](https://github.com/kepano/obsidian-skills): Skills collection for enhancing Obsidian functionality from Obsidian CEO
--   [langgenius/dify](https://github.com/langgenius/dify/tree/main/.claude/skills): Multi-functional Skills collection from Dify
--   [microsoft/agent-skills](https://github.com/microsoft/agent-skills): Agent Skills collection for Azure services from Microsoft
--   [openai/skills](https://github.com/openai/skills): Official Skills collection from OpenAI
--   [remotion-dev/skills](https://github.com/remotion-dev/skills): Create video content using Remotion
--   [replicate/skills](https://github.com/replicate/skills): AI model invocation Skills collection from Replicate
--   [slidevjs/slidev](https://github.com/slidevjs/slidev/tree/main/skills/slidev): Presentation creation Skills collection from Slidev
--   [google-labs-code/stitch-skills](https://github.com/google-labs-code/stitch-skills): Stitch Skills collection from Google Labs
--   [stripe/ai](https://github.com/stripe/ai): Financial payment related Skills collection from Stripe
--   [sanity-io/agent-toolkit](https://github.com/sanity-io/agent-toolkit/tree/main/skills): Content management platform Skills collection from Sanity
--   [supabase/agent-skills](https://github.com/supabase/agent-skills): PostgreSQL best practices from Supabase
--   [WordPress/agent-skills](https://github.com/WordPress/agent-skills): Content management platform Skills collection from WordPress
--   [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills): React/Next.js Skills collection from Vercel
+-   [anthropics](https://github.com/anthropics/skills): Skills collection from Anthropic
+-   [better-auth](https://github.com/better-auth/skills): Authentication tools Skills collection from Better Auth
+-   [black-forest-labs](https://github.com/black-forest-labs/skills): Skills collection for controlling FLUX models from Black Forest Labs
+-   [browser-use](https://github.com/browser-use/browser-use/tree/main/skills): Browser automation Skills collection from Browser Use
+-   [cloudflare](https://github.com/cloudflare/skills): API integration Skills collection from Cloudflare
+-   [clickhouse](https://github.com/ClickHouse/agent-skills): Database query and analytics Skills collection from ClickHouse
+-   [expo](https://github.com/expo/skills): React Native Skills collection from Expo
+-   [firecrawl](https://github.com/firecrawl/cli): CLI tool Skills from Firecrawl
+-   [gemini](https://github.com/google-gemini/gemini-skills): API/SDK Skills collection from Google Gemini
+-   [huggingface](https://github.com/huggingface/skills): Skills for training large models from HuggingFace
+-   [obsidian](https://github.com/kepano/obsidian-skills): Skills collection for enhancing Obsidian functionality from Obsidian CEO
+-   [dify](https://github.com/langgenius/dify/tree/main/.claude/skills): Multi-functional Skills collection from Dify
+-   [microsoft](https://github.com/microsoft/agent-skills): Agent Skills collection for Azure services from Microsoft
+-   [openai](https://github.com/openai/skills): Official Skills collection from OpenAI
+-   [remotion](https://github.com/remotion-dev/skills): Create video content using Remotion
+-   [replicates](https://github.com/replicate/skills): AI model invocation Skills collection from Replicate
+-   [slidev](https://github.com/slidevjs/slidev/tree/main/skills/slidev): Presentation creation Skills collection from Slidev
+-   [stripe](https://github.com/stripe/ai): Financial payment related Skills collection from Stripe
+-   [sanity](https://github.com/sanity-io/agent-toolkit/tree/main/skills): Content management platform Skills collection from Sanity
+-   [supabase](https://github.com/supabase/agent-skills): PostgreSQL best practices from Supabase
+-   [wordpress](https://github.com/WordPress/agent-skills): Content management platform Skills collection from WordPress
+-   [vercel](https://github.com/vercel-labs/agent-skills): React/Next.js Skills collection from Vercel
 
 
 ### Content Creation
 
--   [JimLiu/baoyu-skills](https://github.com/JimLiu/baoyu-skills): Baoyu's personal Skills collection, including WeChat Official Account writing, PPT creation, etc.
--   [github.com/op7418)](https://github.com/op7418?tab=repositories): A series of Skills collections by Guizang, including PPT creation, YouTube analysis, etc.
--   [wshuyi/x-article-publisher-skill](https://github.com/wshuyi/x-article-publisher-skill): Wang Shuyi's Skill for publishing X articles
--   [huangserva/skill-prompt-generator](https://github.com/huangserva/skill-prompt-generator): Huangserva's Skill for generating and optimizing AI portrait text-to-image prompts
+-   [baoyu-skills](https://github.com/JimLiu/baoyu-skills): Baoyu's personal Skills collection, including WeChat Official Account writing, PPT creation, etc.
+-   [op7418)](https://github.com/op7418?tab=repositories): A series of Skills collections by Guizang, including PPT creation, YouTube analysis, etc.
+-   [wshuyi](https://github.com/wshuyi/x-article-publisher-skill): Wang Shuyi's Skill for publishing X articles
+-   [huangserva](https://github.com/huangserva/skill-prompt-generator): Huangserva's Skill for generating and optimizing AI portrait text-to-image prompts
 
 ### Programming Assistance
 
--   [obra/superpowers](https://github.com/obra/superpowers/tree/main/skills): Skills collection covering complete programming project workflows
--   [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills): Quality Skills collection covering multiple programming tasks
--   [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill): Skills collection for UI/UX design
--   [OthmanAdi/planning-with-files](https://github.com/OthmanAdi/planning-with-files): Skill for achieving long-term Plan effects using file planning
--   [hyf0/vue-skills](https://github.com/hyf0/vue-skills): Skills collection for Vue.js development
+-   [superpowers](https://github.com/obra/superpowers/tree/main/skills): Skills collection covering complete programming project workflows
+-   [ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill): Skills collection for UI/UX design
 
 ### Product Usage
 
@@ -186,63 +168,38 @@ As the Agent Skills standard becomes more widespread, an increasing number of co
 -   [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills): Skills collection for marketing
 -   [K-Dense-AI/claude-scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills): Skills collection for scientific researchers
 
-## Plugin Marketplace
-
-This project provides a Claude Code Plugin Marketplace focused on Skill creation, helping you quickly create and improve high-quality Agent Skills.
-
-### Add Marketplace
-
-```bash
-/plugin marketplace add likai/awesome-agentskills
-```
-
-### Available Plugins
-
-#### Agent Skills Toolkit
-
-A complete Agent Skills toolkit with enhanced skill-creator-pro and quick commands:
-
-- ✨ **Create New Skills**: Build professional skills from scratch
-- 🔧 **Improve Existing Skills**: Optimize and update your skills
-- 📊 **Performance Testing**: Run evaluation tests and performance benchmarks
-- 🎯 **Description Optimization**: Optimize skill descriptions for better triggering accuracy
-
-### Installation and Usage
-
-1. After adding the marketplace, open the `/plugin` command
-2. Find "Agent Skills Toolkit" in the Discover tab
-3. Select installation scope (User/Project/Local) and install
-4. Use the following commands:
-   - `/agent-skills-toolkit:skill-creator-pro` - Complete workflow (Enhanced)
-   - `/agent-skills-toolkit:create-skill` - Create new skill
-   - `/agent-skills-toolkit:improve-skill` - Improve existing skill
-   - `/agent-skills-toolkit:test-skill` - Test and evaluate skill
-   - `/agent-skills-toolkit:optimize-description` - Optimize description
-
-For more details, see the [plugins directory](plugins/).
-
-## Supporting Tools
+### Supporting Tools
 
 -   [yusufkaraaslan/Skill_Seekers](https://github.com/yusufkaraaslan/Skill_Seekers): Automated scraping of documentation sites, GitHub repositories, and PDF files for conversion into Agent Skills
 -   [context7 cli](https://context7.com/docs/skills#skills): Manage and use Agent Skills with context7 cli command-line tool
 -   [openskills](https://github.com/numman-ali/openskills): Global Skills loading tool supporting multiple Agent platforms
 -   [skild.sh](https://skild.sh/): CLI tool for installing, managing, and syncing Skills across multiple tools
 -   [agent-skills-guard](https://github.com/brucevanfdm/agent-skills-guard): Agent Skills visualization management + curated repo + security scanning
--   [skillmaster](https://github.com/davidyangcool/agent-skill): Manage, install, and use Agent Skills via terminal
 
-## Authoritative Resources
+## Enhanced Plugin
 
-Anthropic provides extensive Agent Skills tutorials in their official blog. The following articles are recommended for in-depth understanding of Agent Skills concepts, creation methods, and application scenarios:
+This project builds upon the official skill-creator plugin by incorporating best practices from the [Complete Guide to Building Claude Skills](docs/Claude-Skills-完全构建指南.md), creating a Pro version Plugin to help you quickly create and improve Agent Skills.
 
--   [Introducing Agent Skills: Improve how it performs specific tasks](https://claude.com/blog/skills)
--   [Skills explained: How Skills compares to prompts, Projects, MCP, and subagents](https://claude.com/blog/skills-explained)
--   [Extending Claude's capabilities with skills and MCP servers](https://claude.com/blog/extending-claude-capabilities-with-skills-mcp-servers)
--   [Equipping agents for the real world with Agent Skills](https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills)
--   [How to create Skills: Key steps, limitations, and examples](https://claude.com/blog/how-to-create-skills-key-steps-limitations-and-examples)
--   [Building Skills for Claude Code: Automating your procedural knowledge](https://claude.com/blog/building-skills-for-claude-code)
--   [Code execution with MCP: Building more efficient agents](https://www.anthropic.com/engineering/code-execution-with-mcp)
--   [Improving frontend design through Skills](https://claude.com/blog/improving-frontend-design-through-skills#real-world-skills-examples)
--   [Don't Build Agents, Build Skills Instead](https://x.com/iamzhihui/status/2005883147305500681/photo/1)
+### Add Marketplace
+```bash
+/plugin marketplace add likai/awesome-agent-skills
+```
+
+### Install Plugin
+
+Select and install the `agent-skills-toolkit` plugin. Once installed, you can use it in conversations.
+
+![](../assets/media/skill-creator-pro.png)
+
+### Quick Commands
+
+The plugin includes an enhanced skill-creator-pro skill and corresponding command shortcuts:
+
+- `/agent-skills-toolkit:skill-creator-pro` - Complete workflow (Enhanced)
+- `/agent-skills-toolkit:create-skill` - Create new skill
+- `/agent-skills-toolkit:improve-skill` - Improve existing skill
+- `/agent-skills-toolkit:test-skill` - Test and evaluate skill
+- `/agent-skills-toolkit:optimize-description` - Optimize description
 
 ## Acknowledgments
 
