@@ -2,7 +2,7 @@
 	"name": "awesome-agent-skills",
 	"owner": {
 		"name": "libukai",
-		"email": "xiaobuyao@gmail.com"
+		"email": "noreply@github.com"
 	},
 	"metadata": {
 		"description": "Agent Skills Toolkit - 帮助你创建、改进和测试高质量 Agent Skills 的专业工具集",
@@ -16,7 +16,7 @@
 			"version": "1.0.0",
 			"author": {
 				"name": "libukai",
-				"email": "xiaobuyao@gmail.com"
+				"email": "noreply@github.com"
 			},
 			"homepage": "https://github.com/libukai/awesome-agent-skills",
 			"category": "productivity",
@@ -29,7 +29,7 @@
 			"version": "1.0.0",
 			"author": {
 				"name": "libukai",
-				"email": "xiaobuyao@gmail.com"
+				"email": "noreply@github.com"
 			},
 			"homepage": "https://github.com/libukai/awesome-agent-skills",
 			"category": "development",
