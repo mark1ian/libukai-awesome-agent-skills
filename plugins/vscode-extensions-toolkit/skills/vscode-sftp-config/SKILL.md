@@ -1,22 +1,11 @@
 ---
 name: vscode-sftp-config
-description: Configure VSCode SFTP for deploying static websites (HTML, Vue/React builds, Slidev, Hugo/Jekyll) to production servers. Provides SFTP configuration templates and optimized Nginx settings with security headers, caching strategies, and performance optimizations.
+description: This skill should be used when setting up SFTP deployment for static websites to production servers, including converting projects from Docker/Express to static hosting, deploying Vue/React/Angular builds, setting up Slidev presentations, or configuring Hugo/Jekyll/Gatsby sites. Use this when the user asks to "setup SFTP deployment", "deploy static site to server", "configure Nginx for static files", "convert from Docker to static hosting", "deploy Vue build to production", "setup subdomain hosting", or "configure SFTP in VS Code". Provides SFTP configuration templates and production-ready Nginx configurations with security headers and caching.
 ---
 
 # VSCode SFTP Configuration
 
-## Overview
-
 Configure VSCode SFTP for deploying static websites to production servers. Provides complete workflow including production-ready Nginx configuration templates with security headers, caching strategies, and performance optimizations.
-
-## When to Use This Skill
-
-Invoke this skill when:
-- Converting a project from backend-driven (Express.js/Docker) to pure static hosting
-- Setting up SFTP deployment for Vue/React/Angular build outputs
-- Deploying Slidev presentations or static site generators (Hugo/Jekyll/Gatsby)
-- Configuring Nginx for static file serving with optimal performance
-- Setting up subdomain hosting for multiple static sites
 
 ## Core Workflow
 

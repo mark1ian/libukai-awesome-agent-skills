@@ -11,7 +11,8 @@ env/
 ENV/
 
 # IDE
-.vscode/
+.vscode/*
+!.vscode/sftp.json
 .idea/
 *.swp
 *.swo
