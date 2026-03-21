@@ -26,27 +26,27 @@
 
 </div>
 
-本项目致力于遵循少而精的原则，收集和分享最优质的 Skill 资源、教程、实践案例，帮助更多人轻松迈出搭建 Agent 的第一步。
+本项目致力于遵循少而精的原则，收集和分享最优质的 Skill 资源、教程和实践案例，帮助更多人轻松迈出搭建 Agent 的第一步。
 
-> 欢迎关注我的 𝕏 账号 [@李不凯正在研究](https://x.com/libukai) ，以及 💬 微信公众号 [@李不凯正在研究](https://mp.weixin.qq.com/s/uer7HvD2Z9ZbJSPEZWHKRA?scene=0&subscene=90) ，即时获取 Skills 的最新资源和实战教程！
+> 欢迎关注我的 𝕏 账号 [@李不凯正在研究](https://x.com/libukai) ，以及 💬 微信公众号 [@李不凯正在研究](https://mp.weixin.qq.com/s/uer7HvD2Z9ZbJSPEZWHKRA?scene=0&subscene=90) ，即时获取 Agent Skill 的最新资源和实战教程！
 
 ## 快速入门
 
-Skill 是一种轻量级的通用标准，通过打包工作流程和专业知识，为 AI 提升执行特定任务的能力。
+Skill 是一种轻量级的 Agent 构建方案，通过封装特定的业务流程与行业知识，强化 AI 执行特定任务的专业能力。
 
-当你需要执行可重复的任务时，你无需在每次和 AI 的对话中重复输入相关信息。只需安装对应的 Skill，AI 便能掌握相应的技能。
+面对重复性的任务需求，你无需在每次对话中反复输入背景信息。只需安装对应的 Skill，AI 即可习得该领域的专业技能。
 
-经过半年的发展和迭代，Skill 已成为 Agent 框架中增强 AI 个性化能力的标准方案，并得到了各类 AI 产品的广泛支持。
+历经半年的迭代演进，Skill 已成为增强 AI 垂直领域能力的标准方案，并获得了各类 Agent 框架与 AI 产品的广泛支持。
 
 ## 标准结构
 
-根据标准定义，每个 Skill 都是一个规范化命名的文件夹，包含了流程、资料、脚本等各类资源。AI 通过在上下文中渐进式导入这些内容，来学习和掌握相关技能。
+根据标准定义，每个 Skill 都是一个规范化命名的文件夹，其中包含了流程、资料、脚本等各类资源。通过在上下文中渐进式导入这些文件，AI 即可精准习得并内化相关技能。
 
 ```markdown
 my-skill/
-├── SKILL.md          # 必需：说明和元数据
-├── scripts/          # 可选：可执行代码
-├── references/       # 可选：文档参考资料
+├── SKILL.md          # 必需：流程说明和元数据
+├── references/       # 可选：参考资料
+├── scripts/          # 可选：可执行脚本
 └── assets/           # 可选：模板、资源
 ```
 
@@ -198,6 +198,48 @@ skillhub upgrade # 升级已安装的技能
 -   [marketingskills](https://github.com/coreyhaines31/marketingskills)：强化市场营销的能力领域
 -   [scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills)： 提升科研工作者的技能水平
 
+
+## 安全指南
+
+随着 Agent 自主能力的增强，安全问题日益重要。2026 年，Prompt 注入已成为 AI 系统最主要的攻击向量，占生产环境安全审计问题的 73%。
+
+### 核心威胁
+
+- **Prompt 注入**：恶意指令藏匿于 PDF、邮件、网页或 RAG 检索内容中，Agent 读取后直接执行
+- **工具劫持**：Agent 使用合法工具但被引导向错误目标，例如搜索变下载、草稿变执行
+- **数据泄露**：敏感信息通过 verbose 输出、日志或工具响应意外外泄
+
+### 权限配置
+
+Claude Code 权限分三层：全局 `~/.claude/settings.json`、项目 `.claude/settings.json`、本地 `.claude/settings.local.json`。
+
+- **deny 规则优先于 allow 规则**，默认使用 Normal 模式（覆盖 85% 场景）
+- 仅在隔离的 CI/CD 容器中使用 Bypass 模式
+- 将 `curl`、`wget`、`nc`、`ssh` 等常见泄露向量加入 deny 列表
+- 在敏感项目上运行前，先审计 `CLAUDE.md` 和 `.claude/settings.json`
+
+### Sandboxing
+
+Anthropic 官方 [Sandboxing](https://www.anthropic.com/engineering/claude-code-sandboxing) 使用 OS 级原语（macOS Seatbelt / Linux bubblewrap），在内核层面强制执行文件系统和网络隔离，内部测试显示可减少 84% 的权限提示，同时提升安全性。
+
+### Skill 安全设计原则
+
+1. 将所有外部输入视为不可信
+2. 按任务应用最小权限
+3. 破坏性操作需要人工确认（Human-in-the-loop）
+4. 密钥只存服务端，不暴露给 Agent
+5. 默认假设存在绕过控制的对抗性尝试
+
+### 安全相关 Skill
+
+-   [prompt-injection-defense](https://lobehub.com/skills/alexyyyander-prompt-injection-defense-skill)：会话级 Prompt 注入防御层，覆盖指令覆盖、角色劫持、载荷走私等 12 类攻击模式
+-   [secure-ai](https://playbooks.com/skills/yuniorglez/gemini-elite-core/secure-ai)：AI 安全架构师角色，防注入、数据泄露和权限提升
+
+### 延伸阅读
+
+-   @Anthropic：[Making Claude Code more secure with sandboxing](https://www.anthropic.com/engineering/claude-code-sandboxing)
+-   @SFEIR：[Claude Code Permissions & Security Tips](https://institute.sfeir.com/en/claude-code/claude-code-permissions-and-security/tips/)
+-   @Ankit Shah：[Agentic AI Security in 2026: The Year Prompt Injection Became a Weapon](https://ankitshah009.substack.com/p/agentic-ai-security-in-2026-the-year)
 
 ## 创建技能
 
