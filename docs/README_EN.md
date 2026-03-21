@@ -52,7 +52,17 @@ my-skill/
 
 ## Install Skills
 
-Skills can be used in Claude and ChatGPT apps, IDE and TUI coding tools, and Agent Harnesses like OpenClaw.
+Skills can be used in Claude and ChatGPT apps, IDE and TUI coding tools like Cursor and Claude Code, and Agent Harnesses like OpenClaw.
+
+The essence of installing a Skill is simply placing the Skill's folder into a specific directory so that AI can load and use it on demand.
+
+### Claude App Ecosystem
+
+![](../assets/media/claude_app.png)
+
+There are currently two main ways to use Skills in the App: install through the App's built-in Skill store, or install by uploading a zip file.
+
+For Skills not available in the official store, you can download them from the recommended third-party Skill stores below and install them manually.
 
 ### Claude Code Ecosystem
 
@@ -190,30 +200,44 @@ skillhub upgrade                  # Upgrade installed skills
 
 ### Programming & Development
 
-- [superpowers](https://github.com/obra/superpowers/tree/main/skills): Complete programming project workflow
-- [ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill): More refined and personalized UI/UX design
+-   [superpowers](https://github.com/obra/superpowers): Complete programming project workflow
+-   [frontend-design](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/frontend-design): Frontend design skills
+-   [ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill): More refined and personalized UI/UX design
+-   [code-review](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/code-review): Code review skills
+-   [code-simplifier](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/code-simplifier): Code simplification skills
+-   [commit-commands](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/commit-commands): Git commit skills
 
 ### Content Creation
 
-- [baoyu-skills](https://github.com/JimLiu/baoyu-skills): Baoyu's personal Skills collection, including WeChat article writing, PPT creation, etc.
-- [libukai](https://github.com/libukai/awesome-agent-skills/tree/main/skills): Obsidian-related tool Skills
-- [op7418](https://github.com/op7418): A series of Skills collections including PPT creation, YouTube analysis, etc.
-- [cclank](https://github.com/cclank/news-aggregator-skill): News aggregation Skill that automatically fetches and summarizes the latest news in specified domains
-- [huangserva](https://github.com/huangserva/skill-prompt-generator): Skill for generating and optimizing AI portrait text-to-image prompts
+-   [baoyu-skills](https://github.com/JimLiu/baoyu-skills): Baoyu's personal Skills collection, including WeChat article writing, PPT creation, etc.
+-   [libukai](https://github.com/libukai/awesome-agent-skills): Obsidian-related skill collection, tailored for Obsidian writing workflows
+-   [op7418](https://github.com/op7418): High-quality PPT creation and YouTube analysis skills
+-   [cclank](https://github.com/cclank/news-aggregator-skill): Automatically fetch and summarize the latest news in specified domains
+-   [huangserva](https://github.com/huangserva/skill-prompt-generator): Generate and optimize AI portrait text-to-image prompts
+-   [dontbesilent](https://github.com/dontbesilent2025/dbskill): Content creation framework by an X influencer based on their own tweets
+-   [seekjourney](https://github.com/geekjourneyx/md2wechat-skill/): AI-assisted WeChat article writing from drafting to publishing
 
 ### Product Usage
 
-- [wps](https://github.com/wpsnote/wpsnote-skills): Control WPS office software
-- [notebooklm](https://github.com/teng-lin/notebooklm-py): Control NotebookLM
-- [n8n](https://github.com/czlonkowski/n8n-skills): Create n8n workflows
-- [threejs](https://github.com/cloudai-x/threejs-skills): Assist with Three.js development
+-   [wps](https://github.com/wpsnote/wpsnote-skills): Control WPS office software
+-   [notebooklm](https://github.com/teng-lin/notebooklm-py): Control NotebookLM
+-   [n8n](https://github.com/czlonkowski/n8n-skills): Create n8n workflows
+-   [threejs](https://github.com/cloudai-x/threejs-skills): Assist with Three.js development
 
 ### Other Types
 
-- [pua](https://github.com/tanweai/pua): Drive agents to work harder in a PUA style
-- [office-hours](https://github.com/garrytan/gstack/tree/main/office-hours): Provide advice from a YC perspective
-- [marketingskills](https://github.com/coreyhaines31/marketingskills): Enhance marketing capabilities
-- [scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills): Improve skills for researchers
+-  [pua](https://github.com/tanweai/pua): Drive AI to work harder in a PUA style
+-   [office-hours](https://github.com/garrytan/gstack/tree/main/office-hours): Provide startup advice from a YC perspective
+-   [marketingskills](https://github.com/coreyhaines31/marketingskills): Enhance marketing capabilities
+-   [scientific-skills](https://github.com/K-Dense-AI/claude-scientific-skills): Improve skills for researchers
+
+## Security Warning
+
+Since Skills may contain potentially risky operations such as calling external APIs or executing scripts, security must be taken seriously when designing and using Skills.
+
+When installing Skills, it is recommended to prioritize those from official stores or well-known third-party stores, and carefully read the Skill's description and user reviews to avoid installing Skills from unknown sources.
+
+For scenarios with higher security requirements, you can refer to @余弦's [OpenClaw Minimal Security Practice Guide v2.8](https://github.com/slowmist/openclaw-security-practice-guide/blob/main/docs/OpenClaw%E6%9E%81%E7%AE%80%E5%AE%89%E5%85%A8%E5%AE%9E%E8%B7%B5%E6%8C%87%E5%8D%97v2.8.md) to have AI perform a self-audit.
 
 ## Create Skills
 
