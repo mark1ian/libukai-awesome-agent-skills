@@ -275,7 +275,7 @@ skillhub upgrade # 升级已安装的技能
 
 插件中置入了多个快捷指令，覆盖了从创建、改进、测试到优化技能描述的完整工作流程：
 
-- `/agent-skills-toolkit:skill-creator-pro` - 完整工作流程（增强版）
+- `/agent-skills-toolkit:skill-creator-pro` - 完整工作流程
 - `/agent-skills-toolkit:create-skill` - 创建新 skill
 - `/agent-skills-toolkit:improve-skill` - 改进现有 skill
 - `/agent-skills-toolkit:test-skill` - 测试评估 skill
